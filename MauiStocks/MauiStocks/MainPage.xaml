@@ -13,8 +13,8 @@
         <local:MainViewModel/>
     </ContentPage.BindingContext>
 
-    <Label Text="Maui Stocks"
-           HorizontalOptions="Center" />
+
+    
 
 
     <dxc:ChartView x:Name="chart"

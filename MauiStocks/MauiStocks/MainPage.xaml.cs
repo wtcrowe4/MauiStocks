@@ -6,19 +6,9 @@ namespace MauiStocks
     {
         public MainPage()
         {
-            try
-            {
-                InitializeComponent();
-            }
-            catch (Exception ex) 
-            {
-                if (ex.InnerException != null)
-                {
-                    string error = ex.InnerException.Message;
-                    Debug.WriteLine(error);
-                }
-            }
-            
+            if (StockData.GetStockPrices() == null)
+                Debugger.Break();
+            InitializeComponent();
         }
 
         

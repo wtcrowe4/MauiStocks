@@ -34,6 +34,22 @@
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
+
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MauiAsset Remove="Resources\Raw\GoogleStock.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Resources\Raw\GoogleStock.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\Raw\GoogleStock.xml">
+			<LogicalName>GoogleStock</LogicalName>
+		</EmbeddedResource>
 	</ItemGroup>
 
 
@@ -44,4 +60,9 @@
 		<PackageReference Include="DevExpress.Maui.Controls" Version="22.2.4" />
 		<TrimmableAssembly Include="DevExpress.Data.v22.2" />
 	</ItemGroup>
+	
+	
+	
+	
+	
 </Project>
