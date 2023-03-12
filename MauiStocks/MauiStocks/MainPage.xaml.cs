@@ -1,15 +1,26 @@
-﻿namespace MauiStocks
+﻿using System.Diagnostics;
+
+namespace MauiStocks
 {
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch (Exception ex) 
+            {
+                if (ex.InnerException != null)
+                {
+                    string error = ex.InnerException.Message;
+                    Debug.WriteLine(error);
+                }
+            }
+            
         }
 
-        async void OnOpenWebButtonClicked(System.Object sender, System.EventArgs e)
-        {
-            await Browser.OpenAsync("https://www.devexpress.com/maui/");
-        }
+        
     }
 }
