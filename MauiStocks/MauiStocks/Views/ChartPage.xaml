@@ -1,4 +1,5 @@
-﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
              xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts"
@@ -6,14 +7,11 @@
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
              xmlns:local="clr-namespace:MauiStocks"
              ios:Page.UseSafeArea="true"
-             x:Class= "MauiStocks.MainPage"
+             x:Class= "MauiStocks.ChartPage"
              Title="Google">
 
-    <ContentPage.Content>
-        <Label Text="Welcome to Maui Stocks" />
-    </ContentPage.Content>
-    
-    <!--<ContentPage.BindingContext>
+
+    <ContentPage.BindingContext>
         <local:MainViewModel/>
     </ContentPage.BindingContext>
 
@@ -138,6 +136,6 @@
                         VerticalPosition="Top" />
         </dxc:ChartView.Legend>
 
-    </dxc:ChartView>-->
+    </dxc:ChartView>
 
 </ContentPage>
