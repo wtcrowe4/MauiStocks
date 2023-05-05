@@ -4,12 +4,12 @@
 
 namespace MauiStocks
 {
-    public class MainViewModel
+    public class ChartViewModel
     {
         public StockPrices StockPrices { get; }
         public DateTimeRange VisualRange { get; }
 
-        public MainViewModel()
+        public ChartViewModel()
         {
             StockPrices = StockData.GetStockPrices();
             VisualRange = new DateTimeRange()

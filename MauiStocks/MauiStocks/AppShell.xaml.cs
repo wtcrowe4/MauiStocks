@@ -1,4 +1,6 @@
-﻿namespace MauiStocks
+﻿
+
+namespace MauiStocks
 {
     public partial class AppShell : Shell
     {

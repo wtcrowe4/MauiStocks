@@ -8,7 +8,9 @@
              ios:Page.UseSafeArea="true"
              x:Class= "MauiStocks.MainPage"
              Title="Google">
-
+    
+    
+    
     <ContentPage.Content>
         <Label Text="Welcome to Maui Stocks" />
     </ContentPage.Content>
